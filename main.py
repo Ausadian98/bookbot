@@ -1,4 +1,4 @@
-from stats import get_num_words
+from stats import *
 
 
 def main():
@@ -21,17 +21,6 @@ def main():
 
 def sort_on(dict):
     return dict['count']
-
-def get_chars_dict(text):
-    chars = {}
-    for char in text:
-        if char.isalpha():
-            lowered = char.lower()
-            if lowered in chars:
-                chars[lowered] += 1
-            else:
-                chars[lowered] = 1
-    return chars
 
 def get_book_text(path):
     with open(path) as f:
