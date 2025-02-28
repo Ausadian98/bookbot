@@ -13,10 +13,11 @@ def main():
 
     list_dict.sort(reverse=True, key=sort_on)
     print("--- Begin report of books/frankenstein.txt ---")
-    print(f"{num_words} words found in the document\n")
+    # print(f"{num_words} words found in the document\n")
+    print(f"Found {num_words} total words")
     for item in list_dict:
-        print(f"The '{item["character"]}' character was found {item["count"]} times")
-    
+        # print(f"The '{item["character"]}' character was found {item["count"]} times")
+        print(f"'{item["character"]}' {item["count"]}")
     print("--- End Report ---")
 
 def sort_on(dict):
