@@ -17,7 +17,7 @@ def main():
     print(f"Found {num_words} total words")
     for item in list_dict:
         # print(f"The '{item["character"]}' character was found {item["count"]} times")
-        print(f"'{item["character"]}' {item["count"]}")
+        print(f"{item["character"]}: {item["count"]}")
     print("--- End Report ---")
 
 def sort_on(dict):
